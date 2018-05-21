@@ -1,0 +1,5 @@
+install.packages("Quandl")
+library(Quandl)
+Quandl.api_key(" KdmYfu6LNPjjbxH72sBE")
+data = Quandl('BCHARTS/LOCALBTCINR', start_date='2017-10-16', end_date='2018-04-15')
+write.csv(data, file = "MyData.csv")
